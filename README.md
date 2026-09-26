@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Blue Chain Aqua — 3D Sequential Aquaculture Experience
 
 This version keeps the uploaded Blue Chain Aqua site content and the uploaded intro video unchanged, then turns the main homepage into a scroll-driven 3D process experience inspired by the supplied 1000161194.mp4 reference.
@@ -64,3 +65,6 @@ The website now includes a floating **Ask Blue Chain Aqua** assistant on every p
 4. The assistant calls `/api/chat`, so the API key stays on the server and is not exposed in browser JavaScript.
 
 The backend uses Gemini's Google Search grounding for current web information. Without `GEMINI_API_KEY`, the chat widget still opens and provides basic built-in guidance, but it will not provide live web-grounded answers.
+=======
+# bluechain_aqua_mp
+>>>>>>> 4ae33e1b5dd2960458db2afb2849bf94abe67087
