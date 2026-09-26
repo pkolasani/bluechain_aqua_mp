@@ -1,0 +1,93 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Blue Chain Aqua completed projects and project coverage across India."><title>Projects | Blue Chain Aqua</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"><link rel="icon" href="assets/blue-chain-aqua-logo-transparent.png"></head><body class="bca-enhanced-page"><nav class="site-multipage-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="planning.html">Planning</a><a href="process.html">Process</a><a href="projects.html" class="active" aria-current="page">Projects</a><a href="why-us.html">Why Us</a><a href="contact.html">Contact</a><a href="organizations.html">Organizations</a></nav><main><section class="operations projects-section" id="track">
+<div class="wrap">
+<div class="projects-heading">
+<div>
+<div class="eyebrow">OUR PROJECTS</div>
+<h2>Our Completed<br/><em>Projects.</em></h2>
+<p>Explore our completed project portfolio across India. Click a highlighted state on the map to view the projects associated with that location.</p>
+</div>
+<div class="projects-summary">
+<div><b>23</b><span>Projects listed</span></div>
+<div><b>5</b><span>States covered</span></div>
+</div>
+</div>
+<div class="completed-projects-panel">
+<div class="project-map-card">
+<div class="map-head">
+<div>
+<div class="eyebrow">PROJECT COVERAGE</div>
+<h3>Where we are working</h3>
+<p>Highlighted states have projects. Click a state to view its project list.</p>
+</div>
+<div class="map-legend"><span class="legend-active"></span> Project state</div>
+</div>
+<div aria-label="Interactive map of India showing Blue Chain Aqua project states" class="india-projects-map" id="indiaProjectsMap"></div>
+<div class="map-instructions">
+<span><b>1</b> Select a highlighted state</span>
+<span><b>2</b> View projects on the right</span>
+</div>
+<div class="map-source">Only states where Blue Chain Aqua has completed projects are highlighted and selectable. India boundaries are shown for geographic reference.</div>
+</div>
+<aside aria-live="polite" class="project-details">
+<div class="project-details-top">
+<div class="eyebrow">SELECTED STATE</div>
+<h3 id="selectedStateName">Andhra Pradesh</h3>
+<span class="project-count" id="selectedStateCount">6 projects</span>
+</div>
+<div class="project-view-tabs" role="tablist" aria-label="State project information">
+  <button type="button" class="project-view-tab active" id="projectsTab" role="tab" aria-selected="true" aria-controls="stateProjectList">Projects</button>
+  <button type="button" class="project-view-tab" id="blueprintsTab" role="tab" aria-selected="false" aria-controls="stateBlueprints">Project Blueprints</button>
+</div>
+<div class="project-tab-panel active" id="stateProjectList" role="tabpanel" aria-labelledby="projectsTab"></div>
+<div class="project-tab-panel blueprint-panel" id="stateBlueprints" role="tabpanel" aria-labelledby="blueprintsTab" hidden></div>
+</aside>
+</div>
+</div>
+</section>
+
+<section class="bca-state-map-section bca-geography-polished" aria-label="Blue Chain Aqua project coverage">
+  <div class="bca-map-heading">
+    <div>
+      <span class="bca-kicker">INDIA · PROJECT COVERAGE</span>
+      <h2>Where we are working</h2>
+      <p>Explore the states where Blue Chain Aqua has completed projects.</p>
+    </div>
+    <span class="bca-map-legend"><i></i> Project state</span>
+  </div>
+
+  <div class="bca-map-shell">
+    <div class="bca-geography-card">
+      <div class="bca-geography-topline">
+        <span>GEOGRAPHICAL COVERAGE</span>
+        <span>5 STATES · 23 PROJECTS</span>
+      </div>
+      <div class="bca-map-image-wrap" id="bcaIndiaMap">
+        <img src="assets/india-project-coverage.png" alt="Map of India showing Blue Chain Aqua project states" class="bca-real-india-map">
+        <div class="bca-map-glow"></div>
+
+        <button class="bca-state-pin bca-pin-wb" data-state="West Bengal">West Bengal <b>4</b></button>
+        <button class="bca-state-pin bca-pin-od" data-state="Odisha">Odisha <b>6</b></button>
+        <button class="bca-state-pin bca-pin-ts" data-state="Telangana">Telangana <b>5</b></button>
+        <button class="bca-state-pin bca-pin-ap" data-state="Andhra Pradesh">Andhra Pradesh <b>6</b></button>
+        <button class="bca-state-pin bca-pin-kl" data-state="Kerala">Kerala <b>2</b></button>
+
+        <div class="bca-map-watermark">BLUE CHAIN AQUA</div>
+      </div>
+      <div class="bca-map-help">
+        <span>01</span> Select a highlighted state
+        <span>02</span> View associated projects
+      </div>
+    </div>
+
+    <aside class="bca-state-results" id="bcaStateResults">
+      <span class="bca-kicker">SELECTED STATE</span>
+      <h3 id="bcaSelectedState">Andhra Pradesh</h3>
+      <span class="bca-count" id="bcaSelectedCount">6 PROJECTS</span>
+      <div id="bcaProjectList" class="bca-project-list"></div>
+    </aside>
+  </div>
+</section>
+
+
+</main><footer><div class="wrap footer"><div class="brand footer-brand"><img class="brand-image footer-logo-image" src="assets/blue-chain-aqua-logo-transparent.png" alt="Blue Chain Aqua"></div><div class="footer-links"><a href="index.html#journey">Journey</a><a href="services.html">Services</a><a href="process.html">Process</a><a href="projects.html">Projects</a><a href="contact.html">Contact</a></div><div class="footer-copy"><div>© <span id="year"></span> Blue Chain Aqua. All rights reserved.</div></div></div></footer><script src="script.js"></script><script src="chatbot.js"></script>
+</body></html>
