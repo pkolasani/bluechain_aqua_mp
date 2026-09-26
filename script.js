@@ -405,3 +405,19 @@ document.querySelectorAll('.ops-stats > div').forEach((card,index)=>{
 
 // Organization logo fallback: keep cards usable if a bundled logo file is unavailable.
 document.querySelectorAll('.organization-logo').forEach(function(img){ img.addEventListener('error',function(){ var w=img.closest('.organization-logo-wrap'); if(w) w.classList.add('logo-broken'); }); });
+
+
+/* Screenshot / print deterrents requested by site owner. */
+(function(){
+  document.addEventListener('contextmenu',function(e){e.preventDefault();},{capture:true});
+  document.addEventListener('dragstart',function(e){e.preventDefault();},{capture:true});
+  document.addEventListener('keydown',function(e){
+    const k=(e.key||'').toLowerCase();
+    const blocked = k==='printscreen' ||
+      (e.ctrlKey && k==='p') || (e.metaKey && k==='p') ||
+      (e.ctrlKey && e.shiftKey && (k==='s' || k==='i')) ||
+      (e.metaKey && e.shiftKey && (k==='s' || k==='i'));
+    if(blocked){ e.preventDefault(); e.stopPropagation(); }
+  },{capture:true});
+  window.addEventListener('beforeprint',function(){document.documentElement.classList.add('bca-print-blocked');});
+})();

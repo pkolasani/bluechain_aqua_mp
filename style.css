@@ -1388,11 +1388,11 @@ body *::before,body *::after{animation:none!important;transition:none!important}
 .blueprint-related{margin:0;padding:0 12px 12px;color:#5c7480;font:600 8px/1.45 Manrope}
 
 /* Keep Skip intro clearly visible at the top of the intro screen. */
-.site-intro .intro-skip{top:22px!important;right:24px!important;bottom:auto!important;z-index:99999!important;display:inline-flex!important;align-items:center;justify-content:center;min-width:94px;min-height:38px;padding:10px 16px!important;border:1px solid rgba(255,255,255,.72)!important;background:rgba(1,31,45,.72)!important;color:#fff!important;box-shadow:0 8px 28px rgba(0,0,0,.28),inset 0 0 0 1px rgba(255,255,255,.08);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);font:800 11px/1 Manrope!important;letter-spacing:.3px;text-shadow:0 1px 2px rgba(0,0,0,.45)}
+.site-intro .intro-skip{top:72px!important;right:24px!important;bottom:auto!important;z-index:100000!important;display:inline-flex!important;align-items:center;justify-content:center;min-width:104px;min-height:40px;padding:10px 17px!important;border:1px solid rgba(255,255,255,.82)!important;background:rgba(1,31,45,.82)!important;color:#fff!important;box-shadow:0 8px 28px rgba(0,0,0,.30),inset 0 0 0 1px rgba(255,255,255,.08);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);font:800 11px/1 Manrope!important;letter-spacing:.3px;text-shadow:0 1px 2px rgba(0,0,0,.45)}
 @media(max-width:600px){
   .blueprint-grid{grid-template-columns:1fr}
   .blueprint-image-wrap{height:190px}
-  .site-intro .intro-skip{top:14px!important;right:14px!important;min-width:88px;min-height:36px;padding:9px 13px!important}
+  .site-intro .intro-skip{top:72px!important;right:14px!important;min-width:96px;min-height:38px;padding:9px 14px!important}
 }
 
 /* SEE THE WORK — step-by-step project journey */
@@ -1832,3 +1832,7 @@ body:has(.wa-doubt-section)::before{
   .wa-doubt-copy h2{font-size:31px}.wa-benefits-row{grid-template-columns:1fr}.wa-benefit,.wa-benefit:nth-child(2),.wa-benefit:nth-child(3){border-right:0;border-bottom:1px solid rgba(7,120,150,.10)}.wa-benefit:last-child{border-bottom:0}
   .wa-contact-grid{gap:18px}.wa-doubt-card{padding:20px 17px !important}.wa-form-grid{grid-template-columns:1fr}.wa-full{grid-column:auto}.wa-contact-methods,.wa-topic-grid{grid-template-columns:1fr}.wa-direct-copy strong{font-size:14px}.wa-direct-button>b{margin-left:0}.wa-arrow{margin-left:0}
 }
+
+
+/* Screenshot / print deterrents requested by site owner. */
+@media print{html,body{display:none!important}}
